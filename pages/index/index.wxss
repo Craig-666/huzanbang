@@ -1,7 +1,5 @@
 /**index.wxss**/
-page{
-  background: #efeff4
-}
+
 .info{
   margin-bottom: 20rpx
 }

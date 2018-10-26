@@ -1,4 +1,7 @@
 /* pages/publish/publish.wxss */
+page{
+  background-color: white
+}
 .info-block{
   width: 100%;
   box-sizing: border-box;
