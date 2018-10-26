@@ -1,0 +1,47 @@
+<!--pages/index/praiseSuccess/praiseSuccess.wxml-->
+<view class='success-block'>
+  <icon type='success' color='#ffa033' size='50'></icon>
+  <view style='font-size:50rpx'>点赞成功</view>
+</view>
+
+<view wx:if='{{list.length>0}}'>
+  <view style='padding-left:30rpx;line-height:60rpx'>选择需他/她帮点内容</view>
+  <view wx:for='{{list}}' wx:key='index'>
+    <view class='item-block' data-index='{{index}}' bindtap='choose' wx:if="{{!item.praised && !item.assigned}}">
+      <view class='info-block'>
+        <view class='title'>标题:{{item.title}}</view>
+        <view class='description'>要求:{{item.description}}</view>
+        <view class='link'>链接:{{item.link}}</view>
+      </view>
+      <view class='check-block'>
+        <icon color='#ffa033' size='24' type="{{selIndex == index ? 'success' :''}}" class='check-icon'></icon>
+      </view>
+    </view>
+    <view wx:else class='praised-block'>
+      <view style='flex:1'>
+        <view class='title praised-color'>标题:{{item.title}}</view>
+        <view class='description praised-color'>要求:{{item.description}}</view>
+        <view class='link praised-color'>链接:{{item.link}}</view>
+      </view>
+      <view class='alert'>
+        {{item.praised ? '已回赞' :'已指派'}}
+      </view>
+      
+    </view>
+  </view>
+  <view class='option-btn' bindtap='save'>确定</view>
+</view>
+
+<view wx:if='{{list.length == 0}}' class='choose-block'>
+  <view class='lineHeight-70'>发布新内容让他/她帮点</view>
+  <form bindsubmit='publish'>
+    <view class='info-block'>
+      <input name='title' placeholder='互赞标题'></input>
+      <input name='description' class='margin-top' placeholder='互赞要求'></input>
+      <textarea name='link' class='margin-top' style='width:100%;height:180rpx;box-sizing:border-box' placeholder='互赞链接'></textarea>
+    </view>
+    <button class='option-btn' form-type='submit'>让他/她帮点</button>
+  </form>
+</view>
+
+<myToast class='myToast' />

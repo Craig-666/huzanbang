@@ -1,0 +1,28 @@
+<!--pages/index/bangdian/bangdian.wxml-->
+<view class='info-block'>
+  <view class='title'>标题: {{item.title}}</view>
+  <view class='description'>要求: {{item.description}}</view>
+  <view class='link'>链接: {{item.link}}</view>
+  <view class='user-block'>
+    <view>{{item.createUserNick}}</view>
+    <view>{{item.createdAt}}</view>
+  </view>
+</view>
+
+<view wx:if='{{!item.praised}}'>
+  <view class='content-block'>
+    <view style='line-height:70rpx'>上传帮点图片</view>
+    <view class='add-block' hover-class='hover-class'>
+      <image bindtap='chooseImage' src="{{tempUrl ? tempUrl :'../../../images/add.png '}}"></image>
+    </view>
+  </view>
+
+  <view class='option-btn' bindtap='upload'>提交</view>
+</view>
+<view wx:else class='ssssss'>
+  已赞
+</view>
+
+
+
+<myToast class='myToast' />

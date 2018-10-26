@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "点赞成功",
+  "usingComponents": {
+    "myToast": "../../../components/myToast/myToast"
+  }
+}

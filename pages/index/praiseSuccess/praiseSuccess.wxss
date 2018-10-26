@@ -1,0 +1,82 @@
+/* pages/index/praiseSuccess/praiseSuccess.wxss */
+.success-block{
+  padding: 30rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fafafa;
+}
+
+.choose-block{
+  padding: 30rpx;
+  box-sizing: border-box;
+  background-color: white
+}
+
+.margin-top{
+  margin-top: 20rpx
+}
+.item-block{
+  padding: 30rpx;
+  box-sizing: border-box;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-bottom: 4rpx solid #efeff4
+}
+
+.info-block{
+  flex: 1
+}
+
+.check-block{
+  display: flex;
+  align-items: center
+}
+
+.check-icon{
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  border: 1rpx solid #acacac
+}
+
+.title{
+  line-height: 60rpx;
+  font-size: 32rpx;
+  color: #333
+}
+
+.description{
+  line-height: 50rpx;
+  font-size: 30rpx;
+  color: #666
+}
+
+.link{
+  line-height: 40rpx;
+  font-size: 28rpx;
+  color: #777
+}
+
+.praised-block{
+  background-color: #fafafa;
+  padding: 30rpx;
+  box-sizing: border-box;
+  display: flex
+}
+
+.praised-color{
+  color: #acacac
+}
+
+.alert{
+  width: 60rpx;
+  height: 100%;
+  font-size: 40rpx;
+  color: #ffa033;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}

@@ -1,0 +1,52 @@
+/**index.wxss**/
+page{
+  background: #efeff4
+}
+.info{
+  margin-bottom: 20rpx
+}
+.info-block{
+  padding: 20rpx 30rpx;
+  box-sizing: border-box;
+  background-color: white
+}
+
+.title{
+  line-height: 60rpx;
+  font-size: 32rpx;
+  color: #333
+}
+
+.description{
+  line-height: 50rpx;
+  font-size: 30rpx;
+  color: #666
+}
+
+.link{
+  line-height: 40rpx;
+  font-size: 28rpx;
+  color: #777
+}
+
+.user-block{
+  display: flex;
+  justify-content: space-between;
+  font-size: 26rpx;
+  color: #999
+}
+
+.click{
+  width: 100%;
+  line-height: 80rpx;
+  background-color: #ffa033;
+  color: white;
+  text-align: center
+}
+.praised{
+  width: 100%;
+  line-height: 80rpx;
+  background-color: #ddd;
+  color: white;
+  text-align: center
+}

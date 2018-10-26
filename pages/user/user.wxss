@@ -1,0 +1,11 @@
+/* pages/user/user.wxss */
+.user-container{
+  background: #ffa033;
+  padding: 30rpx;
+  text-align: center
+}
+.user-header{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx
+}

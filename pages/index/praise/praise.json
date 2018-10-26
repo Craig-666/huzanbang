@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "帮点",
+  "usingComponents": {
+    "myToast": "../../../../components/myToast/myToast"
+  }
+}

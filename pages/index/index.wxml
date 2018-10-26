@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view wx:for='{{list}}' wx:key='index' class='info'>
+  <view class='info-block'>
+    <view class='title'>标题: {{item.title}}</view>
+    <view class='description'>要求: {{item.description}}</view>
+    <view class='link'>链接: {{item.link}}</view>
+    <view class='user-block'>
+      <view>{{item.createUserNick}}</view>
+      <view>{{item.createdAt}}</view>
+    </view>
+  </view>
+  <view wx:if='{{!item.praised}}' id='bangdian' class='click' hover-class='hover-class' data-index='{{index}}' bindtap='handleTap'>帮点</view>
+  <view wx:else class='praised'>已赞</view>
+</view>
+<view wx:if="{{total == list.length}}" class='nomore'>
+  已无更多数据
+</view>
+<myToast class='myToast' />

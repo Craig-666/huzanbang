@@ -1,0 +1,7 @@
+<!--pages/user/user.wxml-->
+<view wx:if='{{hasUserInfo}}' class='user-container'>
+  <image class='user-header' src='{{userInfo.userPic}}'></image>
+</view>
+<view wx:else>
+  <button open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
+</view>
